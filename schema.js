@@ -1,5 +1,6 @@
 const { buildSchema } = require("graphql");
 
+/* Building the schema for the GraphQL API. */
 const schema = buildSchema(`
  type Course {
     id: ID
@@ -52,10 +53,6 @@ input TeachingAssistInput{
 type Mutation {
    createCourse(input:CourseInput ): Course
 }
-
-
-
-
 `);
 
 export default schema;
